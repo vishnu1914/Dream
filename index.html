@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Romantic Dream</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffe6f0, #f9f3ff);
+      font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url('https://www.transparenttextures.com/patterns/hearts.png');
+      background-size: cover;
+      overflow: hidden;
+    }
+
+    .love-box {
+      max-width: 650px;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.85);
+      border: 3px solid #ff99cc;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(255, 153, 204, 0.3);
+      position: relative;
+      text-align: justify;
+      color: #333;
+      line-height: 1.8;
+      backdrop-filter: blur(6px);
+      font-size: 1.1rem;
+      white-space: pre-wrap;
+      overflow-y: auto;
+      height: auto;
+      min-height: 300px;
+      transition: all 0.3s ease;
+    }
+
+    .love-box::before {
+      content: "💖";
+      position: absolute;
+      top: -28px;
+      left: 30px;
+      font-size: 2rem;
+      background-color: #ffe6f0;
+      padding: 4px 8px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .love-box::after {
+      content: "💌";
+      position: absolute;
+      bottom: -28px;
+      right: 30px;
+      font-size: 2rem;
+      background-color: #ffe6f0;
+      padding: 4px 8px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="love-box" id="loveStory"></div>
+
+  <script>
+    const text = `
+Its an afternoon time, enakku theriyala indha edam enga nu, veliya mazhai peyuthu 🌧️. Light drizzle , romba pleasant ah irundhuchu. Namma rendu perum orae veetla thaniyaa🏠… aana feel mattum romba nalla irundhuchu❤️.
+
+Nee oru ponnu kitta phone la romba rude ah pesitu iruk😡. Enna sound nu paatha nee anger ah pesitu iruka 😤 enaku suthama pudikala then un pakathula vandhu, unnaiya shout pannitu 😠 then hugged you tightly 🤗🫂. Un body heat feel pannum bodhu❤️‍🔥, nee silent aayitta 🙂‍↕️ . Un heartbeat 💓 kekumbothu heaven feel kuduthuchu ☺️
+
+Andha calm moment la, naan un lips ah slow ah kiss panninen 💋. Adhu deep ah pochu… nee soft ah “it's juicy…” nu sollitu smile pannina 😊. Athu long passionate liplock ah maariduchu 💑💋🔥.
+
+Konjam time la mood high aayiduchu 🔥. Naan un top remove panninen, athae maadhiri nee enoda top ah remove panni, naan un backside la unnai tight ah katti 🫂🫀, un boobs ah gentle ah press panninen 👋🍒. Neeyum en penis ah press panna aarambichuta ✋🍆.
+
+Athu thaan, aprm bedroom ku ponom… 🛏️
+Rendu perum completely nude 🫣. Bed la thoongi ,face to face, light ah pesitu, light ah sirichitu… naan un body ah kiss panna start panninen 😘 from forehead to neck, chest to waist, every inch unnudaya body ah feel panni kiss panna 💋🤤
+
+Aprm...
+Un legs ah wide ah open pannina Naan konjam neram unoda vagina ah lick panninen 🤤👅🌸… nee silent ah eyes close panni feel pannitu irundha moan... 🙈
+
+Aana sudden ah, alarm sound ⏰ na elundhuten then I took my phone and looked at you and talking like a mad🤣📱`;
+
+    let i = 0;
+    const speed = 30; // typing speed in ms
+    const target = document.getElementById("loveStory");
+
+    function typeWriter() {
+      if (i < text.length) {
+        target.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    window.onload = typeWriter;
+  </script>
+</body>
+</html>
